@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>小ck-520独家限定礼盒</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<!-- Main Style CSS -->
+		<link rel="stylesheet" href="assets/css/style.css">
+		<!-- jQuery JS -->
+		<script src="assets/js/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="assets/js/popper.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="assets/js/bootstrap.min.js"></script>
+
+		<!--[if lt IE 9]>
+   　　<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
+   　　<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+   <![endif]-->
+		<style type="text/css">
+			.jumbotron-fluid {
+				background-color: #EDEFF0;
+			}
+
+			.breadcrumb {
+				background-color: #EDEFF0;
+			}
+
+			@media screen and (max-width: 680px) {
+				#xq {
+					text-align: center;
+				}
+			}
+
+			/*面包屑导航*/
+			.breadcrumb>li+li:before {
+				color: #000000;
+				content: "/ ";
+				padding: 0 5px;
+			}
+
+			.breadcrumb a {
+				color: #000000;
+				font-size: 15px;
+			}
+
+			.breadcrumb a:hover {
+				color: #D39E00;
+			}
+
+			.breadcrumb .active {
+				color: #6C757D;
+			}
+
+			#button {
+				font-family: inherit;
+				width: 100%;
+				padding: 14px;
+				color: #fff;
+				background-color: #282828;
+				text-transform: none;
+				overflow: visible;
+				font: inherit;
+				margin: 0;
+			}
+
+			#button,input[type=submit] {
+				display: inline-block;
+				font-size: 16px;
+				line-height: 16px;
+				color: #fff;
+				padding: 9px 15px 10px;
+				border: 0 none;
+				-webkit-border-radius: 0;
+				-moz-border-radius: 0;
+				border-radius: 0;
+				text-align: center;
+				opacity: 1;
+				-webkit-transition: opacity 0.2s ease;
+				-moz-transition: opacity 0.2s ease;
+				-o-transition: opacity 0.2s ease;
+				transition: opacity 0.2s ease;
+				background-color: #282828;
+			}
+
+			.quantity>input {
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+				-webkit-touch-callout: none;
+				position: relative;
+				width: 100%;
+				text-align: center;
+				border-top: 1px solid #dadada;
+				border-right: 1px solid #dadada;
+				border-left: 1px solid #dadada;
+				overflow: hidden;
+			}
+
+			/* 星级评分 */
+			.shop-rating {
+				height: 25px;
+				overflow: hidden;
+				zoom: 1;
+				padding: 2px 0px;
+				position: relative;
+				z-index: 999;
+			}
+
+			.shop-rating span {
+				height: 25px;
+				display: block;
+				line-height: 23px;
+				float: left;
+			}
+
+			.shop-rating span.title {
+				width: 70px;
+			}
+
+			.shop-rating ul {
+				float: left;
+				margin: 0;
+				padding: 0
+			}
+
+			.shop-rating .result {
+				margin-left: 20px;
+				padding-top: 2px;
+			}
+
+			.shop-rating .result span {
+				color: #ff6d02;
+			}
+
+			.shop-rating .result em {
+				color: #f60;
+				font-family: arial;
+				font-weight: bold;
+			}
+
+			.shop-rating .result strong {
+				color: #666666;
+				font-weight: normal;
+			}
+
+			.rating-level,
+			.rating-level a {
+				background: url(assets/img/icons/star.png) no-repeat scroll 1000px 1000px;
+			}
+
+			.rating-level {
+				background-position: 0px 0px;
+				width: 120px;
+				height: 23px;
+				position: relative;
+				z-index: 1000;
+			}
+
+			.rating-level li {
+				display: inline;
+			}
+
+			.rating-level a {
+				line-height: 23px;
+				height: 23px;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				text-indent: -999em;
+				*zoom: 1;
+				outline: none;
+			}
+
+			.rating-level a.one-star {
+				width: 20%;
+				z-index: 6;
+			}
+
+			.rating-level a.two-stars {
+				width: 40%;
+				z-index: 5;
+			}
+
+			.rating-level a.three-stars {
+				width: 60%;
+				z-index: 4;
+			}
+
+			.rating-level a.four-stars {
+				width: 80%;
+				z-index: 3;
+			}
+
+			.rating-level a.five-stars {
+				width: 100%;
+				z-index: 2;
+			}
+
+			.rating-level .current-rating,
+			.rating-level a:hover {
+				background-position: 0 -28px;
+			}
+
+			.rating-level a.one-star:hover,
+			.rating-level a.two-stars:hover,
+			.rating-level a.one-star.current-rating,
+			.rating-level a.two-stars.current-rating {
+				background-position: 0 -116px;
+			}
+
+			.rating-level .three-stars .current-rating,
+			.rating-level .four-stars .current-rating,
+			.rating-level .five-stars .current-rating {
+				background-position: 0 -28px;
+			}
+
+			.#upl {
+				display: flex;
+			}
+
+			.posted_in a:hover {
+				color: #FD7E14;
+			}
+		</style>
+
+		<script>
+			var Class = {
+					create: function() {
+						return function() {
+							this.initialize.apply(this, arguments);
+						}
+					}
+				}
+
+				var Extend = function(destination, source) {
+					for (var property in source) {
+						destination[property] = source[property];
+					}
+				}
+
+				function stopDefault(e) {
+					if (e && e.preventDefault) {
+						e.preventDefault();
+					} else {
+						window.event.returnValue = false;
+					}
+					return false;
+				}
+
+				// 星星打分组件
+				var Stars = Class.create();
+				Stars.prototype = {
+					initialize: function(star, options) {
+						this.SetOptions(options);
+						var flag = 999;
+						var isIE = (document.all) ? true : false;
+						//星星列表
+						var starlist = document.getElementById(star).getElementsByTagName('a');
+						// 输出结果
+						var input = document.getElementById(this.options.Input) || document.getElementById(star + "-input");
+						// 打印提示
+						var tips = document.getElementById(this.options.Tips) || document.getElementById(star + "-tips");
+						// 定义选中星星样式名
+						var nowClass = " " + this.options.nowClass;
+						// 定义提示文案
+						var tipsTxt = this.options.tipsTxt;
+						//星星数量
+						var len = starlist.length;
+
+						//绑定事件 点击 鼠标滑过
+						for (i = 0; i < len; i++) {
+							starlist[i].value = i;
+							starlist[i].onclick = function(e) {
+								stopDefault(e);
+								this.className = this.className + nowClass;
+								flag = this.value;
+								input.value = this.getAttribute("star:value");
+								tips.innerHTML = tipsTxt[this.value]
+							}
+							starlist[i].onmouseover = function() {
+								if (flag < 999) {
+									var reg = RegExp(nowClass, "g");
+									starlist[flag].className = starlist[flag].className.replace(reg, "")
+								}
+							}
+							starlist[i].onmouseout = function() {
+								if (flag < 999) {
+									starlist[flag].className = starlist[flag].className + nowClass;
+								}
+							}
+						};
+						if (isIE) {
+							var li = document.getElementById(star).getElementsByTagName('li');
+							for (var i = 0, len = li.length; i < len; i++) {
+								var c = li[i];
+								if (c) {
+									c.className = c.getElementsByTagName('a')[0].className;
+								}
+							}
+						}
+					},
+					//设置默认属性
+					SetOptions: function(options) {
+						this.options = { 
+							Input: "", 
+							Tips: "", 
+							nowClass: "current-rating", 
+							tipsTxt: ["1分-严重不合格", "2分-不合格", "3分-合格", "4分-优秀", "5分-完美"]
+						};
+						Extend(this.options, options || {});
+					}
+				}
+
+				var Class = {
+					create: function() {
+						return function() {
+							this.initialize.apply(this, arguments);
+						}
+					}
+				}
+
+				var Extend = function(destination, source) {
+					for (var property in source) {
+						destination[property] = source[property];
+					}
+				}
+
+				function stopDefault(e) {
+					if (e && e.preventDefault) {
+						e.preventDefault();
+					} else {
+						window.event.returnValue = false;
+					}
+					return false;
+				}
+			</script>
+	</head>
+
+	<body>
+		<div class="site-wrapper">
+			<!--第一条导航条-->
+			<div class="nm-navbar">
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" href="#" style="font-size: 13px;">品牌资讯</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="shoping-cart.html" style="font-size: 13px;">购物车</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="#" style="font-size: 13px;">收藏夹</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="#" style="font-size: 13px;">物流跟踪</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<!--logo-->
+			<div class="text-center ">
+				<a class="navbar-brand" href="index.html">
+					<img src="assets/img/logo.png" alt="CHARLES&KEITH">
+				</a>
+			</div>
+
+			<!--第二条导航栏-->
+			<header class="header-section section position-static">
+				<nav class="navbar navbar-expand-sm navbar-light">
+					<!-- 设置汉堡按钮 -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcollapse">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<!-- 设置折叠菜单 -->
+					<div class="collapse navbar-collapse" id="navbarcollapse">
+						<ul class="navbar-nav w-100 ml-auto justify-content-center" style="padding-left: 140px;">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">新品</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link" data-toggle="dropdown">
+									包袋 <b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">全部包袋</a></li>
+									<li><a class="dropdown-item" href="#">卡包</a></li>
+									<li><a class="dropdown-item" href="#">钱包</a></li>
+									<li><a class="dropdown-item" href="#">零钱包</a></li>
+									<li><a class="dropdown-item" href="#">手提包</a></li>
+									<li><a class="dropdown-item" href="#">双肩包</a></li>
+									<li><a class="dropdown-item" href="#">斜挎包</a></li>
+									<li><a class="dropdown-item" href="#">肩背包</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link" data-toggle="dropdown">
+									鞋履 <b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">全部鞋履</a></li>
+									<li><a class="dropdown-item" href="#">平底鞋</a></li>
+									<li><a class="dropdown-item" href="#">高跟鞋</a></li>
+									<li><a class="dropdown-item" href="#">短靴</a></li>
+									<li><a class="dropdown-item" href="#">高筒靴</a></li>
+									<li><a class="dropdown-item" href="#">拖鞋</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link" data-toggle="dropdown">
+									配饰 <b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="all-ornament.html">全部配饰</a></li>
+									<li><a class="dropdown-item" href="#">太阳眼镜</a></li>
+									<li><a class="dropdown-item" href="#">腰带</a></li>
+									<li><a class="dropdown-item" href="#">包肩带</a></li>
+									<li><a class="dropdown-item" href="#">戒指</a></li>
+									<li><a class="dropdown-item" href="#">手环</a></li>
+									<li><a class="dropdown-item" href="#">耳环</a></li>
+									<li><a class="dropdown-item" href="#">项链</a></li>
+									<li><a class="dropdown-item" href="#">其他</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link" data-toggle="dropdown">
+									童款系列 <b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">全部包袋</a></li>
+									<li><a class="dropdown-item" href="#">全部鞋履</a></li>
+									<li><a class="dropdown-item" href="#">全部配饰</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link" data-toggle="dropdown">
+									限时折扣 <b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">全部包袋</a></li>
+									<li><a class="dropdown-item" href="#">全部鞋履</a></li>
+									<li><a class="dropdown-item" href="all-ornament.html">全部配饰</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<li class="nav-item ">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#myModal"><img src="assets/img/icons/search.png"
+							 style="width:18px;"></a>
+					</li>
+					<!-- 模态框 -->
+					<div class="modal fade" id="myModal">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-body" style="height: 80px; margin-top:18px">
+									<img src="assets/img/icons/search.png" />
+									<input type="text" class="" autocomplete="off" placeholder="搜索产品" required style="width:80%; border:1px solid #DADADA;" />
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">点击搜索</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<li class="nav-item ">
+						<a class="nav-link" href="login.html"><img src="assets/img/icons/user.png" style="width:18px;"></a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link" href="shoping-cart.html"><img src="assets/img/icons/gwc.png" style="width:18px;"></a>
+					</li>
+				</nav>
+			</header>
+			<hr />
+			<!-- 头部 End -->
+
+			<!--设置灰色背景框 -->
+			<div class="jumbotron jumbotron-fluid">
+				<div class="container">
+					<!-- 面包屑导航 -->
+					<ul class="breadcrumb">
+						<li><a href="index.html">首页&nbsp;</a></li>
+						<li><a href="#"> 包袋&nbsp;</a></li>
+						<li><a href="#"> 肩背包&nbsp;</a></li>
+						<li class="active"> 520独家限定礼盒</li>
+					</ul>
+
+					<h3 class="product_title entry-title">
+						&nbsp;&nbsp;520独家限定礼盒&nbsp;
+						<span class="badge badge-pill badge-light">HOT!</span>
+						<!--设置徽章-->
+					</h3>
+					<p class="price">&nbsp;&nbsp;&nbsp;&nbsp;
+						<del class="price-old" style="color:#95999C">￥569.00</del>
+						<span class="price-sale" style="color: #FD7E14; font-weight: bold; font-size: 20px;">￥520.00</span>
+					</p>
+
+
+					<div class="container" style="margin-top:30px">
+						<div class="row">
+							<div class="col-lg-6 col-sm-6 col-12">
+								<div id="demo" class="carousel slide" data-ride="carousel">
+									<!-- 指示符 -->
+									<ul class="carousel-indicators">
+										<li data-target="#demo" data-slide-to="0" class="active"></li>
+										<li data-target="#demo" data-slide-to="1"></li>
+										<li data-target="#demo" data-slide-to="2"></li>
+										<li data-target="#demo" data-slide-to="3"></li>
+										<li data-target="#demo" data-slide-to="4"></li>
+									</ul>
+
+									<!-- 轮播图片 -->
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<a target="_blank" href="assets/img/shop-details/bag-detail1.jpg">
+												<img src="assets/img/shop-details/bag-detail1.jpg">
+											</a>
+										</div>
+										<div class="carousel-item">
+											<a target="_blank" href="assets/img/shop-details/bag-detail2.jpg">
+												<img src="assets/img/shop-details/bag-detail2.jpg">
+											</a>
+										</div>
+										<div class="carousel-item">
+											<a target="_blank" href="assets/img/shop-details/bag-detail3.jpg">
+												<img src="assets/img/shop-details/bag-detail3.jpg">
+											</a>
+										</div>
+										<div class="carousel-item">
+											<a target="_blank" href="assets/img/shop-details/bag-detail4.jpg">
+												<img src="assets/img/shop-details/bag-detail4.jpg">
+											</a>
+										</div>
+										<div class="carousel-item">
+											<a target="_blank" href="assets/img/shop-details/bag-detail5.jpg">
+												<img src="assets/img/shop-details/bag-detail5.jpg">
+											</a>
+										</div>
+									</div>
+									<!-- 轮播导航 -->
+									<a class="carousel-control-prev" href="#demo" data-slide="prev">
+										<span class="carousel-control-prev-icon"></span>
+									</a>
+									<a class="carousel-control-next" href="#demo" data-slide="next">
+										<span class="carousel-control-next-icon"></span>
+									</a>
+								</div>
+							</div>
+							<!--图片轮播 End-->
+							<br><br>
+
+							<div class="col-1g-1 col-sm-1 col-12">
+							</div>
+							<!-- Tab panes -->
+							<div class="col-lg-5 col-sm-5 col-12">
+								<div class="tab-content">
+									<div id="gs" class="container tab-pane active"><br>
+										<h3 class="product_title entry-title" style="line-height: 2.5;" id="xq">商品详情</h3>
+										<div style="line-height: 1.5;">
+											<p>附赠肩带数量 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.0</p>
+											<p>包重（G）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;450.0</p>
+											<p>流行款式 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;信封包\梯形包</p>
+											<p>肩带长度(CM) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25-62</p>
+											<p>适合场所&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;派对/休闲/度假</p>
+											<p>包里材质&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;聚氨酯合成革</p>
+											<p>带底部金属托 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;否</p>
+											<p>背着方式&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;肩背包\斜背包</p>
+											<p>是否可拆卸 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;否</p>
+											<p>包身规格(CM) &nbsp;&nbsp; 23.0L*6.5W*12.0H</p>
+											<p>COLOUR &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;综合色</p>
+											<p>肩带是否可调节&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;是</p>
+											<p>闭合方式 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;锁扣</p>
+											<p>容量大小&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S型</p>
+										</div><br />
+										<from>
+											<div class="quantity">
+												<input type="number" id="number" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1"
+												 size="4" pattern="[0-9]*">
+											</div>
+											<button type="submit" name="add-to-cart" value="9999" id="button">加入购物车</button>
+											</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 描述and用户评论 -->
+			<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+				<li class="nav-item" style="font-size: 12px;">
+					<a class="nav-link active" id="ms-tab" data-toggle="tab" href="#ms" role="tab" aria-controls="ms" aria-selected="true">描述</a>
+				</li>&nbsp;
+				<li class="nav-item">
+					<a class="nav-link" id="upl-tab" data-toggle="tab" href="#upl" role="tab" aria-controls="upl" aria-selected="false">用户评论
+						<span style="vertical-align:top; color: #dc9814; line-height: 1;">0</span>
+					</a>
+				</li>
+			</ul>
+			<br />
+			<div class="tab-content" id="myTabContent"><br />
+				<div class="tab-pane fade show active text-center" id="ms" role="tabpanel" aria-labelledby="ms-tab">
+					<p>价格说明：页面显示的划线部分价格为商品曾展示过的销售价格，仅供参考；</p>
+					<p>未划线部分价格为商品在本平台的当前销售价（不包含各类优惠券或其他优惠活动的金额抵扣）</p>
+				</div>
+
+				<div class="tab-pane fade" id="upl" role="tabpanel" aria-labelledby="upl-tab">
+					<div class="container">
+						<div class="row  justify-content-center align-items-center">
+							<div class="col-12 col-sm-8">
+								<p>目前还没有评论</p>
+								<h3>成为第一个评论 “限量款礼盒 520独家限定礼盒” 的人</h3><br />
+								<p>电子邮件地址不会被公开。 必填项已用*标注</p>
+								<!--星级评分-->
+								<div class="shop-rating">
+									<span class="title">您的评分</span>
+									<ul class="rating-level" id="stars2">
+										<li><a class="one-star" star:value="20" href="#">20</a></li>
+										<li><a class="two-stars" star:value="40" href="#">40</a></li>
+										<li><a class="three-stars" star:value="60" href="#">60</a></li>
+										<li><a class="four-stars" star:value="80" href="#">80</a></li>
+										<li><a class="five-stars" star:value="100" href="#">100</a></li>
+									</ul>
+									<span class="result" id="stars2-tips"></span>
+									<input type="hidden" id="stars2-input" name="b" value="" size="2" />
+								</div><!-- 星级评分 END -->
+								<br />
+								<p class="comment-form-comment">
+									<label for="author">您的评价&nbsp;
+										<span class="required">*</span>
+									</label>
+									<textarea class="form-control" aria-label="With textarea" rows="8" cols="80">  </textarea>
+
+								</p>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12">
+										<p class="comment-form-name">
+											<label for="name">名称&nbsp;
+												<span class="required">*</span>
+											</label><br />
+											<input id="name" name="name" type="text" value="" size="30" required="">
+										</p>
+									</div>
+
+									<div class="col-lg-6 col-md-6 col-sm-12">
+										<p class="comment-form-email">
+											<label for="email">电子邮件&nbsp;
+												<span class="required">*</span>
+											</label><br />
+											<input id="email" name="email" type="email" value="" size="30" required="">
+										</p>
+									</div>
+								</div>
+								<br />
+								<p class="form-submit">
+									<input name="submit" type="submit" id="submit" class="submit" value="提交" style="width: 100px;">
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br />
+			<hr />
+			<div id="nm-product-meta" class="product_meta">
+				<div class="nm-row text-center">
+					<div class="col-xs-12">
+						<span class="posted_in">分类：
+							<a href="#" rel="tag">包袋</a> ,
+							<a href="#" rel="tag">肩背包</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<hr />
+			<br />
+
+			<!-- 相关产品 -->
+			<div class="product-section" id="new">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="text-center">
+							<h2>相关产品</h2>
+						</div>
+					</div><br>
+
+					<div class="row">
+						<div class="col-lg-3 col-sm-6 col-6">
+							<div class="product-item bg-white">
+								<div class="image-wrap">
+									<a href="#" class="image">
+										<!--实现鼠标移到图片变换-->
+										<img src="assets/img/bags/bag-9.jpg" onmouseover="this.src='assets/img/bags/bag-99.jpg'" onmouseout="this.src='assets/img/bags/bag-9.jpg'"
+										 alt="" style="display:block; width:100%!important; height:100%!important;">
+									</a>
+								</div>
+								<div class="content text-center">
+									<h4 class="title"><a href="#">限量小粉盒</a></h4>
+									<div class="price">
+										<del class="price-old">￥669.00</del>
+										<span class="price-sale">￥639.00</span>
+										<div id="aa">
+											<a href="#">显示更多</a>&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#">购买</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6 col-6">
+							<div class="product-item bg-white">
+								<div class="image-wrap">
+									<a href="#" class="image">
+										<!--实现鼠标移到图片变换-->
+										<img src="assets/img/bags/bag-10.jpg" onmouseover="this.src='assets/img/bags/bag-100.jpg'" onmouseout="this.src='assets/img/bags/bag-10.jpg'"
+										 alt="" style="display:block; width:100%!important; height:100%!important;">
+									</a>
+								</div>
+								<div class="content text-center">
+									<h4 class="title"><a href="#">星空元素卡包</a></h4>
+									<div class="price">
+										<del class="price-old">￥299.00</del>
+										<span class="price-sale">￥199.00</span>
+										<div id="aa">
+											<a href="#">显示更多</a>&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#">购买</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6 col-6">
+							<div class="product-item bg-white">
+								<div class="image-wrap">
+									<a href="#" class="image">
+										<!--实现鼠标移到图片变换-->
+										<img src="assets/img/bags/bag-11.jpg" onmouseover="this.src='assets/img/bags/bag-111.jpg'" onmouseout="this.src='assets/img/bags/bag-11.jpg'"
+										 alt="" style="display:block; width:100%!important; height:100%!important;">
+									</a>
+								</div>
+								<div class="content text-center">
+									<h4 class="title"><a href="#">TPU翻盖手提包</a></h4>
+									<div class="price">
+										<span class="price-sale">￥369.00</span>
+										<div id="aa">
+											<a href="#">显示更多</a>&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#">购买</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6 col-6">
+							<div class="product-item bg-white">
+								<div class="image-wrap">
+									<a href="#" class="image">
+										<!--实现鼠标移到图片变换-->
+										<img src="assets/img/bags/bag-12.jpg" onmouseover="this.src='assets/img/bags/bag-122.jpg'" onmouseout="this.src='assets/img/bags/bag-12.jpg'"
+										 alt="" style="display:block; width:100%!important; height:100%!important;">
+									</a>
+								</div>
+								<div class="content text-center">
+									<h4 class="title"><a href="#">mini零钱包</a></h4>
+									<div class="price">
+										<span class="price-sale">￥439.00</span>
+										<div id="aa">
+											<a href="#">显示更多</a>&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#">购买</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 相关产品 End -->
+
+			<br><br><br><br><br>
+			<footer class="">
+				<nav class="navbar navbar-default fixed-bottom" role="navigation" style="background-color:white;">
+					<a class="nav-link active" href="index.html"><img src="assets/img/icons/sy.png" style="width:60px;"></a>
+					<a class="nav-link" href="#"><img src="assets/img/icons/fl.jpg" style="width:30px;"></a>
+					<a class="nav-link" href="#"><img src="assets/img/icons/shop.png" style="width:60px;"></a>
+				</nav>
+			</footer>
+	</body>
+</html>

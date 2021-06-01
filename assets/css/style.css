@@ -1,0 +1,205 @@
+/*-- Common Style --*/
+*,
+*::after,
+*::before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background-color: #ffffff;
+	line-height: 1.6;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	visibility: visible;
+	font-family: "Poppins", sans-serif;
+	color: #373b3e;
+	position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #23252a;
+	font-weight: 400;
+	font-family: "Quicksand", sans-serif;
+	margin-top: 0;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 42px;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 36px;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+h4 {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+h5 {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+h6 {
+	font-size: 12px;
+	line-height: 14px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+a,
+button {
+	color: inherit;
+	display: inline-block;
+	line-height: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a,
+button,
+img,
+input,
+span {
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+*:focus {
+	outline: none !important;
+}
+
+a:focus {
+	color: inherit;
+	outline: none;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+button,
+input[type="submit"] {
+	cursor: pointer;
+}
+
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.text-center,
+.image-wrap {
+	text-align: center;
+	width: 100%;
+}
+
+/*-- Main Menu --*/
+.main-menu {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: left;
+	-ms-flex-pack: left;
+	justify-content: left;
+}
+
+.carousel-inner img {
+	width: 100%;
+	height: 100%;
+}
+
+.nav-item a {
+	font-size: 20px;
+}
+
+/*隐藏第一条导航栏*/
+@media (max-width: 992px) {
+	.nm-navbar {
+		display: none;
+	}
+}
+
+/*设置第一条导航栏大小*/
+.nm-navbar>nav>ul>li>a {
+	padding-top: 0;
+	padding-bottom: 0;
+	height: 16px;
+}
+
+.navbar {
+	min-height: 20px;
+}
+
+.navbar .nav-link a:hover {
+	color: #6C757D;
+}
+
+/*下拉菜单效果*/
+.navbar .dropdown-menu a:hover {
+	color: #FFFFFF;
+	background-color: #ABDDE5;
+}
+
+.text-center>a>img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*设置下拉菜单自动弹下来*/
+.nav-item .dropdown-menu {
+	display: none;
+}
+
+.nav-item:hover .dropdown-menu {
+	display: block;
+}
+
+/*设置导航栏字体大小*/
+.navbar-collapse>ul>li>a {
+	font-size: 16px;
+}
+
+.dropdown-menu>li>a {
+	font-size: 16px;
+}
+
+#aa {
+	color: #888888;
+}
+
+#aa>a:hover {
+	color: #C69500;
+	text-decoration: underline;
+	/*增加下划线*/
+}
+
+.price-sale {
+	color: #C69500;
+}

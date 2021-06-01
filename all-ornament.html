@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>小ck-全部配饰</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<!-- Main Style CSS -->
+		<link rel="stylesheet" href="assets/css/style.css">
+		<!-- jQuery JS -->
+		<script src="assets/js/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="assets/js/popper.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="assets/js/bootstrap.min.js"></script>
+
+		<!--[if lt IE 9]>
+		　　<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
+		　　<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<![endif]-->
+		<style>
+			/*面包屑导航*/
+			.breadcrumb {
+				background-color: #FFFFFF;
+			}
+		
+			.breadcrumb>li+li:before {
+				color: #95999C;
+				content: "/ ";
+				padding: 0 5px;
+		
+			}
+		
+			.breadcrumb a {
+				color: #95999C;
+				font-size: 19px;
+			}
+		
+		
+			.breadcrumb a:hover {
+				color: #D39E00;
+			}
+		</style>
+		
+		<script type="text/javascript">
+			function a(el) {
+				el.style.color = "#D39E00";
+			}
+		</script>
+	<body>
+		<div class="site-wrapper">
+			<!--第一条导航条-->
+			<div class="nm-navbar">
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" href="#" style="font-size: 13px;">品牌资讯</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="shoping-cart.html" style="font-size: 13px;">购物车</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="#" style="font-size: 13px;">收藏夹</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="#" style="font-size: 13px;">物流跟踪</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<!--logo-->
+			<div class="text-center ">
+				<a class="navbar-brand" href="index.html">
+					<img src="assets/img/logo.png" alt="CHARLES&KEITH">
+				</a>
+			</div>
+
+			<!--第二条导航栏-->
+			<header class="header-section section position-static">
+				<nav class="navbar navbar-expand-sm navbar-light">
+					<!-- 设置汉堡按钮 -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcollapse">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<!-- 设置折叠菜单 -->
+					<div class="collapse navbar-collapse" id="navbarcollapse">
+						<ul class="navbar-nav w-100 ml-auto justify-content-center" style="padding-left: 140px;">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">新品</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link" data-toggle="dropdown">
+									包袋 <b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">全部包袋</a></li>
+									<li><a class="dropdown-item" href="#">卡包</a></li>
+									<li><a class="dropdown-item" href="#">钱包</a></li>
+									<li><a class="dropdown-item" href="#">零钱包</a></li>
+									<li><a class="dropdown-item" href="#">手提包</a></li>
+									<li><a class="dropdown-item" href="#">双肩包</a></li>
+									<li><a class="dropdown-item" href="#">斜挎包</a></li>
+									<li><a class="dropdown-item" href="#">肩背包</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link" data-toggle="dropdown">
+									鞋履 <b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">全部鞋履</a></li>
+									<li><a class="dropdown-item" href="#">平底鞋</a></li>
+									<li><a class="dropdown-item" href="#">高跟鞋</a></li>
+									<li><a class="dropdown-item" href="#">短靴</a></li>
+									<li><a class="dropdown-item" href="#">高筒靴</a></li>
+									<li><a class="dropdown-item" href="#">拖鞋</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link" data-toggle="dropdown">
+									配饰 <b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="all-ornament.html">全部配饰</a></li>
+									<li><a class="dropdown-item" href="#">太阳眼镜</a></li>
+									<li><a class="dropdown-item" href="#">腰带</a></li>
+									<li><a class="dropdown-item" href="#">包肩带</a></li>
+									<li><a class="dropdown-item" href="#">戒指</a></li>
+									<li><a class="dropdown-item" href="#">手环</a></li>
+									<li><a class="dropdown-item" href="#">耳环</a></li>
+									<li><a class="dropdown-item" href="#">项链</a></li>
+									<li><a class="dropdown-item" href="#">其他</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link" data-toggle="dropdown">
+									童款系列 <b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">全部包袋</a></li>
+									<li><a class="dropdown-item" href="#">全部鞋履</a></li>
+									<li><a class="dropdown-item" href="#">全部配饰</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link" data-toggle="dropdown">
+									限时折扣 <b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">全部包袋</a></li>
+									<li><a class="dropdown-item" href="#">全部鞋履</a></li>
+									<li><a class="dropdown-item" href="#">全部配饰</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<li class="nav-item ">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#myModal"><img src="assets/img/icons/search.png"
+							 style="width:18px;"></a>
+					</li>
+					<!-- 模态框 -->
+					<div class="modal fade" id="myModal">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-body" style="height: 80px; margin-top:18px">
+									<img src="assets/img/icons/search.png" />
+									<input type="text" class="" autocomplete="off" placeholder="搜索产品" required style="width:80%; border:1px solid #DADADA;" />
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">点击搜索</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<li class="nav-item ">
+						<a class="nav-link" href="login.html"><img src="assets/img/icons/user.png" style="width:18px;"></a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link" href="shoping-cart.html"><img src="assets/img/icons/gwc.png" style="width:18px;"></a>
+					</li>
+				</nav>
+			</header>
+			<hr />
+			<!-- 头部 End -->
+
+			<!-- 配饰logo -->
+			<div class="container-fluid">
+				<img src="assets/img/ornaments/ornament-logo.png" style="width: 100%!important;">
+				<a href="all-ornament.html"></a>
+			</div>
+
+			<!-- 内容 -->
+			<div class="product-section">
+				<div class="container-fluid">
+					<!-- 面包屑导航 -->
+					<ul class="breadcrumb">
+						<li><a href="#">全部&nbsp;</a></li>
+						<!-- 实现点击后字体变颜色 -->
+						<li><a href="#demo" data-toggle="collapse" id="bs" onclick="a(this)"> 配饰&nbsp;</a></li>
+						<li><a href="#"> 包袋&nbsp;</a></li>
+						<li><a href="#"> 鞋履&nbsp;</a></li>
+					</ul>
+					<div class="collapse" id="demo">
+						<ul class="breadcrumb">
+							<li><a href="#"> 腰带&nbsp;</a></li>
+							<li><a href="#"> 耳环&nbsp;</a></li>
+							<li><a href="#"> 手环&nbsp;</a></li>
+							<li><a href="#"> 戒指&nbsp;</a></li>
+							<li><a href="#">太阳眼镜&nbsp;</a></li>
+						</ul>
+					</div><br>
+
+					<div class="row">
+						<div class="col-lg-3 col-sm-6 col-6">
+							<div class="product-item bg-white">
+								<div class="image-wrap">
+									<a href="#" class="image">
+										<!--实现鼠标移到图片变换-->
+										<img src="assets/img/ornaments/ornament1.jpg" onmouseover="this.src='assets/img/ornaments/ornament11.jpg'"
+										 onmouseout="this.src='assets/img/ornaments/ornament1.jpg'" alt="" style="display:block; width:100%!important; height:100%!important;">
+									</a>
+								</div>
+								<div class="content text-center">
+									<h4 class="title"><a href="#">“&”极简戒指</a></h4>
+									<div class="price">
+										<span class="price-sale">￥79.00</span>
+										<div id="aa">
+											<a href="#">显示更多</a>&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#">购买</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6 col-6">
+							<div class="product-item bg-white">
+								<div class="image-wrap">
+									<a href="#" class="image">
+										<!--实现鼠标移到图片变换-->
+										<img src="assets/img/ornaments/ornament2.jpg" onmouseover="this.src='assets/img/ornaments/ornament22.jpg'"
+										 onmouseout="this.src='assets/img/ornaments/ornament2.jpg'" alt="" style="display:block; width:100%!important; height:100%!important;">
+									</a>
+								</div>
+								<div class="content text-center">
+									<h4 class="title"><a href="#">人造水晶饰戒指</a></h4>
+									<div class="price">
+										<span class="price-sale">￥79.00</span>
+										<div id="aa">
+											<a href="#">显示更多</a>&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#">购买</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6 col-6">
+							<div class="product-item bg-white">
+								<div class="image-wrap">
+									<a href="#" class="image">
+										<!--实现鼠标移到图片变换-->
+										<img src="assets/img/ornaments/ornament3.jpg" onmouseover="this.src='assets/img/ornaments/ornament33.jpg'"
+										 onmouseout="this.src='assets/img/ornaments/ornament3.jpg'" alt="" style="display:block; width:100%!important; height:100%!important;">
+									</a>
+								</div>
+								<div class="content text-center">
+									<h4 class="title"><a href="#">不对称金属几何耳环</a></h4>
+									<div class="price">
+										<span class="price-sale">￥139.00</span>
+										<div id="aa">
+											<a href="#">显示更多</a>&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#">购买</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6 col-6">
+							<div class="product-item bg-white">
+								<div class="image-wrap">
+									<a href="#" class="image">
+										<!--实现鼠标移到图片变换-->
+										<img src="assets/img/ornaments/ornament4.jpg" onmouseover="this.src='assets/img/ornaments/ornament44.jpg'"
+										 onmouseout="this.src='assets/img/ornaments/ornament4.jpg'" alt="" style="display:block; width:100%!important; height:100%!important;">
+									</a>
+								</div>
+								<div class="content text-center">
+									<h4 class="title"><a href="#">it’s ok镶嵌水晶字母耳环</a></h4>
+									<div class="price">
+										<span class="price-sale">￥199.00</span>
+										<div id="aa">
+											<a href="#">显示更多</a>&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#">购买</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="row">
+						<div class="col-lg-3 col-sm-6 col-6">
+							<div class="product-item bg-white">
+								<div class="image-wrap">
+									<a href="#" class="image">
+										<!--实现鼠标移到图片变换-->
+										<img src="assets/img/ornaments/ornament5.jpg" onmouseover="this.src='assets/img/ornaments/ornament55.jpg'"
+										 onmouseout="this.src='assets/img/ornaments/ornament5.jpg'" alt="" style="display:block; width:100%!important; height:100%!important;">
+									</a>
+								</div>
+								<div class="content text-center">
+									<h4 class="title"><a href="#">圆型粗框太阳眼镜</a></h4>
+									<div class="price">
+										<span class="price-sale">￥339.00</span>
+										<div id="aa">
+											<a href="#">显示更多</a>&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#">购买</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6 col-6">
+							<div class="product-item bg-white">
+								<div class="image-wrap">
+									<a href="#" class="image">
+										<!--实现鼠标移到图片变换-->
+										<img src="assets/img/ornaments/ornament6.jpg" onmouseover="this.src='assets/img/ornaments/ornament66.jpg'"
+										 onmouseout="this.src='assets/img/ornaments/ornament6.jpg'" alt="" style="display:block; width:100%!important; height:100%!important;">
+									</a>
+								</div>
+								<div class="content text-center">
+									<h4 class="title"><a href="#">透明TPU腰带</a></h4>
+									<div class="price">
+										<span class="price-sale">￥99.00</span>
+										<div id="aa">
+											<a href="#">显示更多</a>&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#">购买</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6 col-6">
+							<div class="product-item bg-white">
+								<div class="image-wrap">
+									<a href="#" class="image">
+										<!--实现鼠标移到图片变换-->
+										<img src="assets/img/ornaments/ornament7.jpg" onmouseover="this.src='assets/img/ornaments/ornament77.jpg'"
+										 onmouseout="this.src='assets/img/ornaments/ornament7.jpg'" alt="" style="display:block; width:100%!important; height:100%!important;">
+									</a>
+								</div>
+								<div class="content text-center">
+									<h4 class="title"><a href="#">方扣细款低腰腰带</a></h4>
+									<div class="price">
+										<span class="price-sale">￥119.00</span>
+										<div id="aa">
+											<a href="#">显示更多</a>&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#">购买</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6 col-6">
+							<div class="product-item bg-white">
+								<div class="image-wrap">
+									<a href="#" class="image">
+										<!--实现鼠标移到图片变换-->
+										<img src="assets/img/ornaments/ornament8.jpg" onmouseover="this.src='assets/img/ornaments/ornament88.jpg'"
+										 onmouseout="this.src='assets/img/ornaments/ornament8.jpg'" alt="" style="display:block; width:100%!important; height:100%!important;">
+									</a>
+								</div>
+								<div class="content text-center">
+									<h4 class="title"><a href="#">半宝石不规则手环</a></h4>
+									<div class="price">
+										<span class="price-sale">￥169.00</span>
+										<div id="aa">
+											<a href="#">显示更多</a>&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#">购买</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-3 col-sm-6 col-6">
+							<div class="product-item bg-white">
+								<div class="image-wrap">
+									<a href="#" class="image">
+										<!--实现鼠标移到图片变换-->
+										<img src="assets/img/ornaments/ornament9.jpg" onmouseover="this.src='assets/img/ornaments/ornament99.jpg'"
+										 onmouseout="this.src='assets/img/ornaments/ornament9.jpg'" alt="" style="display:block; width:100%!important; height:100%!important;">
+									</a>
+								</div>
+								<div class="content text-center">
+									<h4 class="title"><a href="#">彩片粗框太阳眼镜</a></h4>
+									<div class="price">
+										<span class="price-sale">￥399.00</span>
+										<div id="aa">
+											<a href="#">显示更多</a>&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#">购买</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6 col-6">
+							<div class="product-item bg-white">
+								<div class="image-wrap">
+									<a href="#" class="image">
+										<!--实现鼠标移到图片变换-->
+										<img src="assets/img/ornaments/ornament10.jpg" onmouseover="this.src='assets/img/ornaments/ornament100.jpg'"
+										 onmouseout="this.src='assets/img/ornaments/ornament10.jpg'" alt="" style="display:block; width:100%!important; height:100%!important;">
+									</a>
+								</div>
+								<div class="content text-center">
+									<h4 class="title"><a href="#">链条饰细腰带</a></h4>
+									<div class="price">
+										<span class="price-sale">￥99.00</span>
+										<div id="aa">
+											<a href="#">显示更多</a>&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#">购买</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6 col-6">
+							<div class="product-item bg-white">
+								<div class="image-wrap">
+									<a href="#" class="image">
+										<!--实现鼠标移到图片变换-->
+										<img src="assets/img/ornaments/ornament-11.jpg" onmouseover="this.src='assets/img/ornaments/ornament-111.jpg'"
+										 onmouseout="this.src='assets/img/ornaments/ornament-11.jpg'" alt="" style="display:block; width:100%!important; height:100%!important;">
+									</a>
+								</div>
+								<div class="content text-center">
+									<h4 class="title"><a href="#">链条饰双环戒指</a></h4>
+									<div class="price">
+										<span class="price-sale">￥69.00</span>
+										<div id="aa">
+											<a href="#">显示更多</a>&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#">购买</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6 col-6">
+							<div class="product-item bg-white">
+								<div class="image-wrap">
+									<a href="#" class="image">
+										<!--实现鼠标移到图片变换-->
+										<img src="assets/img/ornaments/ornament-12.jpg" onmouseover="this.src='assets/img/ornaments/ornament-122.jpg'"
+										 onmouseout="this.src='assets/img/ornaments/ornament-12.jpg'" alt="" style="display:block; width:100%!important; height:100%!important;">
+									</a>
+								</div>
+								<div class="content text-center">
+									<h4 class="title"><a href="#">“&”长款耳环</a></h4>
+									<div class="price">
+										<span class="price-sale">￥99.00</span>
+										<div id="aa">
+											<a href="#">显示更多</a>&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#">购买</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="row">
+						<div class="col-lg-3 col-sm-6 col-6">
+							<div class="product-item bg-white">
+								<div class="image-wrap">
+									<a href="#" class="image">
+										<!--实现鼠标移到图片变换-->
+										<img src="assets/img/ornaments/ornament-13.jpg" onmouseover="this.src='assets/img/ornaments/ornament-133.jpg'"
+										 onmouseout="this.src='assets/img/ornaments/ornament-13.jpg'" alt="" style="display:block; width:100%!important; height:100%!important;">
+									</a>
+								</div>
+								<div class="content text-center">
+									<h4 class="title"><a href="#">人造水晶饰手环</a></h4>
+									<div class="price">
+										<span class="price-sale">￥169.00</span>
+										<div id="aa">
+											<a href="#">显示更多</a>&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#">购买</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6 col-6">
+							<div class="product-item bg-white">
+								<div class="image-wrap">
+									<a href="#" class="image">
+										<!--实现鼠标移到图片变换-->
+										<img src="assets/img/ornaments/ornament-14.jpg" onmouseover="this.src='assets/img/ornaments/ornament-144.jpg'"
+										 onmouseout="this.src='assets/img/ornaments/ornament-14.jpg'" alt="" style="display:block; width:100%!important; height:100%!important;">
+									</a>
+								</div>
+								<div class="content text-center">
+									<h4 class="title"><a href="#">复古圆形太阳眼镜</a></h4>
+									<div class="price">
+										<span class="price-sale">￥399.00</span>
+										<div id="aa">
+											<a href="#">显示更多</a>&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#">购买</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6 col-6">
+							<div class="product-item bg-white">
+								<div class="image-wrap">
+									<a href="#" class="image">
+										<!--实现鼠标移到图片变换-->
+										<img src="assets/img/ornaments/ornament-15.jpg" onmouseover="this.src='assets/img/ornaments/ornament-155.jpg'"
+										 onmouseout="this.src='assets/img/ornaments/ornament-15.jpg'" alt="" style="display:block; width:100%!important; height:100%!important;">
+									</a>
+								</div>
+								<div class="content text-center">
+									<h4 class="title"><a href="#">金属孔眼腰带</a></h4>
+									<div class="price">
+										<span class="price-sale">￥99.00</span>
+										<div id="aa">
+											<a href="#">显示更多</a>&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#">购买</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6 col-6">
+							<div class="product-item bg-white">
+								<div class="image-wrap">
+									<a href="#" class="image">
+										<!--实现鼠标移到图片变换-->
+										<img src="assets/img/ornaments/ornament-16.jpg" onmouseover="this.src='assets/img/ornaments/ornament-166.jpg'"
+										 onmouseout="this.src='assets/img/ornaments/ornament-16.jpg'" alt="" style="display:block; width:100%!important; height:100%!important;">
+									</a>
+								</div>
+								<div class="content text-center">
+									<h4 class="title"><a href="#">包边金属细框眼镜</a></h4>
+									<div class="price">
+										<span class="price-sale">￥399.00</span>
+										<div id="aa">
+											<a href="#">显示更多</a>&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#">购买</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 产品 End -->
+			<br />
+
+			<hr />
+			<div id="nm-product-meta" class="product_meta">
+				<div class="nm-row text-center">
+					<div class="col-xs-12">
+						<div class="spinner-grow spinner-grow-sm" role="status">
+							<span class="sr-only">Loading...</span>
+						</div>&nbsp;
+						<span class="posted_in">所有商品已加载完毕！</span>
+					</div>
+				</div>
+			</div>
+			<hr />
+
+			<br><br><br><br><br>
+			<footer class="">
+				<nav class="navbar navbar-default fixed-bottom" role="navigation" style="background-color:white;">
+					<a class="nav-link active" href="index.html"><img src="assets/img/icons/sy.png" style="width:60px;"></a>
+					<a class="nav-link" href="#"><img src="assets/img/icons/fl.jpg" style="width:30px;"></a>
+					<a class="nav-link" href="shoping-cart.html"><img src="assets/img/icons/shop.png" style="width:60px;"></a>
+				</nav>
+			</footer>
+	</body>
+</html>
